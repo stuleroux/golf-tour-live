@@ -1,0 +1,1 @@
+const required=["SUPABASE_TEST_URL","SUPABASE_TEST_PUBLISHABLE_KEY","SUPABASE_TEST_SERVICE_ROLE_KEY","SUPABASE_TEST_DB_URL"];const missing=required.filter(k=>!process.env[k]);if(missing.length){console.error(`Missing Supabase test environment values: ${missing.join(", ")}`);process.exit(2)}console.log("Supabase hosted test environment variables are present.");
